@@ -1,0 +1,36 @@
+﻿@model Social.User
+
+@{
+    ViewBag.Title = "Profile";
+}
+<div class="row"><h1>@Session["username"]'s profile</h1></div>
+
+
+<div class="row">
+
+    <div class="row">
+        <h2>Background</h2>
+        @Html.DisplayFor(model => model.Description.background) <br />
+        @Html.ActionLink("Edit", "Edit", "Descriptions", new { @id = (int) Session["userID"] })
+    </div>
+
+    <div class="row">
+        <h2>Groups</h2>
+        <p>@Html.DisplayFor(model => model.Group.groupName)</p><br />
+        @Html.ActionLink("Edit", "Edit", "Groups", new { @id = Session["userID"] })
+    </div>
+
+    <div class="row">
+        <h2>Universe</h2>
+        <br />
+        <p>@Html.DisplayFor(model => model.Universe.universeName)</p>
+        <br />
+        <p> @Html.DisplayFor(model => model.Universe.origin)</p><br />
+        @Html.ActionLink("Edit", "Edit", "Universes", new { @id = Session["userID"] })
+
+    </div>
+</div>
+<p>
+    
+    @Html.ActionLink("Log out", "Logout", "Logout");
+</p>

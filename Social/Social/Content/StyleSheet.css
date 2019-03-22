@@ -1,0 +1,75 @@
+﻿body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+
+button, input, optgroup, select, textarea {
+    color: black;
+}
+
+a {
+    color: grey;
+}
+
+#dropdownMenuLink {
+    padding: 15px;
+    color: grey;
+}
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.57);
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.57);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.57);
+    border-color: rgba(0, 0, 0, 0.57);
+}
+
+button {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.top-buffer {
+    margin-top: 150px;
+}
+
+.withcontent {
+    background-color: rgba(0, 0, 0, 0.57);
+    padding-bottom: 20px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(https://benlomax.neocities.org/galaxy_1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.form-inline {
+    font-weight: lighter;
+    color: grey;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
